@@ -17,7 +17,7 @@
 #include "thpool.h"
 
 void task(void *arg){
-	printf("Thread #%u working on %d\n", (int)pthread_self(), (int) arg);
+	printf("Thread #%u working on %d\n", (int)pthread_self(), (uintptr_t)arg);
 }
 
 
